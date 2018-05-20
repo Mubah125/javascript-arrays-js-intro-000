@@ -4,6 +4,7 @@ var chocolateBars = new Array("snickers" , "hundred grand" , "kitkat" , "skittle
   return [element, ...array]
   // addElementToBeginningOfArray.unshift("string");
   // return addElementToBeginningOfArray;
+<<<<<<< HEAD
 }
 
 function destructivelyAddElementToBeginningOfArray(array, element) {
@@ -16,11 +17,24 @@ return array ;
 function addElementToEndOfArray(array , element){
 
 return [...array , element]
+=======
+};
+
+function destructivelyAddElementToBeginningOfArray(array , element) {
+
+return array.unshift(element);
+
+};
+function addElementToEndOfArray(array , element){
+
+return [array , ...element]
+>>>>>>> 9777f1daf8a61885153babcc352c66add6056011
 
 };
 
 function destructivelyAddElementToEndOfArray(array , element){
 
+<<<<<<< HEAD
  array.push(element);
 return array;
 };
@@ -51,5 +65,8 @@ function destructivelyRemoveElementFromEndOfArray(array){
 
 function removeElementFromEndOfArray(array){
 return array.slice(0 , array.length -1);
+=======
+return array.push(element);
+>>>>>>> 9777f1daf8a61885153babcc352c66add6056011
 
 };
